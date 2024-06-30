@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    {{data.title}}
+    <br>
+    {{data.description}}
+    
+    <a href="{% url 'update_view' id=data.id %}">EDIT</a>
+    <a href="{% url 'delete' id=data.id %}">DELETE</a>
+   
+</div>
+{% endblock %}
